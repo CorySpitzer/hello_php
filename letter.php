@@ -1,9 +1,10 @@
 <?php
-  // php has 'superglobals' - $_GET that can apparently access whatever they like
+  // php has 'superglobals' - like $_GET, an associative array -
+  // can apparently access whatever they like
   // Lets get the recipient and sender with them.
   $recipient = $_GET["recipient"];
   $sender = $_GET["sender"];
-  $sum = $_GET["first_number"] + $_GET["second_number"] 
+  $sum = $_GET["first_number"] + $_GET["second_number"]
 ?>
 
 <html>
@@ -17,5 +18,7 @@
     <p>
       numbers <?php echo $sum ?>
     </p>
+
+
   </body>
 </html>
